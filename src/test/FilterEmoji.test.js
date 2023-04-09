@@ -13,7 +13,7 @@ describe("filter-emoji-render", () => {
     test('emoji filtreleme kismi test edilmeli ', () => {
         //inputa bir emoji girilir.
         const emoji="Grinning"
-        //inputa eklemek icin userEvent kullanilir
+        //inputa eklemek icin fireEvent kullanilir
         fireEvent.click(emojiFilter,emoji)
         expect(screen.getByText(emoji)).toBeInTheDocument()
 
