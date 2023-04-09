@@ -7,7 +7,7 @@ describe("copy-emoji-render", () => {
     beforeEach(() => {
         //App componneti render edilir
         render(<App/>);
-        //Joy emojisini koopyalamak icin seceriz.
+        //Joy emojisini kopyalamak icin seceriz.
         copyEmoji = screen.getByText("Joy")
     });
     test('emoji kopyalama islemi gerceklestirilmeli ', () => {
